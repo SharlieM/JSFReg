@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>A Simple JavaServer Faces Registration Application</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <h2>JSF Registration App</h2>
+        <h4>Registration Confirmation</h4>
+        <table>
+            <tr>
+                <td>>First Name:</td>
+                <td>
+                    <h:outputText value ="#{userBean.firstName}"/>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <h:outputText  vale="#{userBean.sex}"/>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <h:outputText  value="#{userBan.dob}" />
+
+                </td>
+            </tr>
+            <tr>
+                <td>Email Addess</td>
+                <td>
+                    <h:outputText  value="#{userBan.email}" />
+                </td>
+            </tr>
+            <tr>
+                <td>Service Level</td>
+                <td>
+                    <h:outputText  value="#{userBan.serviceLevel}" />
+
+                </td>
+            </tr>
+<tr>
+          <td> <h:commandButton value="Edit" action="register" /></td>
+<td><h:commandButton value="Confirm" action="#{userBean.addConfirmedUser}" /></td>
+</tr>
+        </table>
+    </h:form>
+</h:body>
+</html>
