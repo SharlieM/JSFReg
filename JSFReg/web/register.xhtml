@@ -15,9 +15,9 @@
     <h4>Registration Form</h4>
     <table>
         <tr>
-            <td>>First Name:</td>
+            <td>First Name:</td>
             <td>
-                <h:inputText lable="First Name"
+                <h:inputText label="First Name"
                              id="fname"
                              value ="#{userBean.firstName}"
                              required="true"/>
@@ -25,11 +25,21 @@
             </td>
         </tr>
         <tr>
+            <td>Last Name:</td>
+            <td>
+                <h:inputText label="Last Name"
+                             id="lname"
+                             value ="#{userBean.lastName}"
+                             required="true"/>
+                <h:message for="lname"/>
+            </td>
+        </tr>
+        <tr>
             <td>Sex:</td>
             <td>
                 <h:selectOneRadio label="Sex"
                                   id="sex"
-                                  vale="#{userBean.sex}"
+                                  value="#{userBean.sex}"
                                   required="true">
                     <f:selectItem itemLabel="Male" itemValue="male"/>
                     <f:selectItem itemLabel="Female" itemValue="female"/>
@@ -42,7 +52,7 @@
             <td>
                 <h:inputText label="Date of Birth"
                              id="dob"
-                             value="#{userBan.dob}"
+                             value="#{userBean.dob}"
                              required="true">
                     <f:convertDateTime pattern="MM-dd-yy"/>
                 </h:inputText>(mm-dd-yy)
@@ -52,11 +62,11 @@
 <tr>
     <td>Email Addess</td>
     <td>
-        <h:inputText lable="Email Address"
+        <h:inputText label="Email Address"
                      id="email"
                      value="#{userBean.email}"
                      required="true"
-                     validator="#{userBean.validateEmail}"/>
+                     />
         <h:message for="email"/>
     </td>
 </tr>

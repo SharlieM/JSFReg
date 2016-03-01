@@ -9,9 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src" />
-        </sourceRoots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -24,10 +22,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Mojarra-2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.32" level="application_server_libraries" />
     <orderEntry type="library" name="Maven: javax.faces:jsf-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.faces:jsf-impl:2.1.20-04" level="project" />
   </component>
